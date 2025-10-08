@@ -1,0 +1,124 @@
+ 
+:root {
+    --bg: #0e0f12;
+    --ink: #eef0f3;
+    --muted: #a8b0bd;
+    --card: #16181d;
+    --link: #9fd1ff;
+    --accent: #c6a3ff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink)
+}
+
+.wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+.site-header,
+.site-footer {
+    background: #0b0c10;
+    border-bottom: 1px solid #1f2229
+}
+
+.site-header .wrap,
+.site-footer .wrap {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between
+}
+
+ 
+
+.brand {
+    color: var(--ink);
+    font-weight: 700;
+    text-decoration: none
+}
+
+.nav a {
+    color: var(--link);
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: 500
+}
+
+.nav a:hover {
+    color: var(--accent);
+    text-decoration: underline
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin: 24px 0
+}
+
+.lede {
+    color: var(--muted);
+    max-width: 60ch
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 24px 0
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border: 1px solid #1f2229;
+    border-radius: 12px
+}
+
+.card h2 {
+    margin-top: 0
+}
+
+.card .cta {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--link)
+}
+
+.links {
+    list-style: none;
+    padding: 0
+}
+
+.links li {
+    margin: 10px 0
+}
+
+.links a, .card a {
+    color: var(--link);
+    text-decoration: none
+}
+
+.links a:hover,
+.card a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.simple {
+    border-bottom: 1px solid #1f2229
+}
+
+.site-footer p,
+.site-footer a {
+    color: var(--muted)
+}
