@@ -1,3 +1,7 @@
+:root {
+    --accent: #9fd1ff;
+}
+
 /* === NAVBAR === */
 .navbar {
     display: flex;
@@ -38,7 +42,7 @@ header {
 }
 
 .nav-header a:hover {
-    color: #dccded;
+    color: var(--brand);
 }
 
 .nav-brand {
@@ -60,9 +64,12 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    color: #FFFFFF;
+    color: var(--nav-toggle);
 }
 
+.nav-toggle:hover{
+    color: var(--accent);
+}
 .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +82,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-  color: var(--nav-link);
+    color: var(--nav-link);
     padding: 0.5rem 0.5rem;
     border-radius: 4px;
     transition: background 0.2s ease;
@@ -97,6 +104,7 @@ header {
         width: 100%;
         margin: 0;
         gap: 0;
+        text-align: center;
     }
 
     .nav-links.active {
@@ -106,5 +114,9 @@ header {
     .nav-links li {
         padding: 0.75rem;
         border-top: 1px solid #FFFFFF;
+    }
+    .nav-header{
+        justify-content: space-between;
+        width: 100%;
     }
 }
