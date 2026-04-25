@@ -33,8 +33,6 @@
 
  .site-header,
  .site-footer {
-     background: #0b0c10;
-     border-bottom: 1px solid #1f2229;
      text-align: center;
      padding-top: 0;
      padding-left: 0;
@@ -176,7 +174,7 @@
  }
 
  .simple {
-     border-bottom: 1px solid #1f2229
+     border-top: 1px solid var(--muted);
  }
 
  .site-footer p,
