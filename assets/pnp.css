@@ -19,10 +19,10 @@
      color: var(--ink)
  }
 
- header{
-    max-width: 1060px;
+ header {
+     max-width: 1060px;
      margin: 0 auto;
-       background: var(--bg);
+     background: var(--bg);
  }
 
  .wrap {
@@ -46,9 +46,9 @@
      gap: 16px;
      align-items: center;
      justify-content: space-between;
-       max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 1rem;
  }
 
 
@@ -59,63 +59,63 @@
      text-decoration: none
  }
 
- 
-/* Navigation */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  color: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 0px;
-  background-color: var(--brand);
-}
 
-.nav-title {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
+ /* Navigation */
+ .nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     color: white;
+     padding: 1rem;
+     margin-bottom: 1rem;
+     margin-top: 0px;
+     background-color: var(--brand);
+ }
 
-}
+ .nav-title {
+     font-family: 'Helvetica Neue', sans-serif;
+     font-size: 1.4rem;
+     font-weight: bold;
 
-.nav-title a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+ }
 
-.nav-title a:hover {
-  color: var(--accent);
-}
+ .nav-title a {
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+     transition: color 0.3s ease;
+ }
 
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-}
+ .nav-title a:hover {
+     color: var(--accent);
+ }
 
-.nav-links a {
-  text-decoration: none;
-  color: var(--nav-link);
-  padding: .4rem .7rem;
-  border-radius: var(--radius-sm);
-}
+ .nav-links {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     gap: 1rem;
+ }
 
-.nav-links a:hover {
-  background: var(--panel);
-  color: var(--brand-ink);
-}
+ .nav-links a {
+     text-decoration: none;
+     color: var(--nav-link);
+     padding: .4rem .7rem;
+     border-radius: var(--radius-sm);
+ }
 
-.nav-links a:focus {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
-  border-radius: 6px;
-}
+ .nav-links a:hover {
+     background: var(--panel);
+     color: var(--brand-ink);
+ }
+
+ .nav-links a:focus {
+     outline: 3px solid var(--focus);
+     outline-offset: 2px;
+     border-radius: 6px;
+ }
 
  h1 {
      font-size: 2.2rem;
@@ -139,7 +139,11 @@
      background: var(--card);
      padding: 20px;
      border: 1px solid #1f2229;
-     border-radius: 12px
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
  }
 
  .card h2 {
@@ -159,6 +163,24 @@
 
  .links li {
      margin: 10px 0
+ }
+
+ .card .cta {
+     padding: 0.55rem 1.1rem;
+     border-radius: 999px;
+     text-decoration: none;
+     font-weight: 500;
+     transition: all 0.25s ease;
+     border: 1px solid rgba(255, 255, 255, 0.12);
+     background: rgba(255, 255, 255, 0.05);
+     color: #f5f3ee;
+     backdrop-filter: blur(12px);
+ }
+
+ .card .cta:hover {
+     background: rgba(255, 255, 255, 0.12);
+     transform: translateY(-2px);
+     text-decoration: none;
  }
 
  .links a,
